@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BlueprintMediaServisModelStoreContainer" CdmEntityContainer="BlueprintMediaServisEntities1">
+    <EntitySetMapping Name="Magazines">
+      <EntityTypeMapping TypeName="BlueprintMediaServisModel.Magazine">
+        <MappingFragment StoreEntitySet="Magazines">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="createTime" ColumnName="createTime" />
+          <ScalarProperty Name="updateTime" ColumnName="updateTime" />
+          <ScalarProperty Name="pdfName" ColumnName="pdfName" />
+          <ScalarProperty Name="imageName" ColumnName="imageName" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="pdfFile" ColumnName="pdfFile" />
+          <ScalarProperty Name="imageFile" ColumnName="imageFile" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

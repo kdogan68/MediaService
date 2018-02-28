@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BlueprintMediaServisModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Magazines">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="createTime" Type="datetime" />
+    <Property Name="updateTime" Type="datetime" />
+    <Property Name="pdfName" Type="varchar" MaxLength="255" />
+    <Property Name="imageName" Type="varchar" MaxLength="255" />
+    <Property Name="title" Type="varchar" MaxLength="255" />
+    <Property Name="pdfFile" Type="varbinary(max)" />
+    <Property Name="imageFile" Type="varbinary(max)" />
+  </EntityType>
+  <EntityContainer Name="BlueprintMediaServisModelStoreContainer">
+    <EntitySet Name="Magazines" EntityType="Self.Magazines" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
